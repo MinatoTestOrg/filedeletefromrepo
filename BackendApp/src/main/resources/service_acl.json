@@ -115,6 +115,44 @@
     },
     "options": {}
   },
+  "filedeletefromrepotable1s": {
+    "post": {
+      "/datatable": [
+        "App Admin",
+        "Development Administrator"
+      ],
+      "/": [
+        "App Admin",
+        "Development Administrator"
+      ]
+    },
+    "get": {
+      "/{sid}": [
+        "App Admin",
+        "Development Administrator"
+      ],
+      "/autosuggest": [
+        "App Admin",
+        "Development Administrator"
+      ]
+    },
+    "put": {
+      "/": [
+        "App Admin",
+        "Development Administrator"
+      ]
+    },
+    "delete": {
+      "/{ids}": [
+        "App Admin",
+        "Development Administrator"
+      ],
+      "/{id}/delete/{ids}": [
+        "App Admin",
+        "Development Administrator"
+      ]
+    }
+  },
   "otp": {
     "post": {
       "/validateotp/{otp}": [
