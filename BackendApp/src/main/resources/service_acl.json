@@ -52,13 +52,6 @@
       ]
     }
   },
-  "environmentinfo": {
-    "get": {
-      "/": [
-        "PermitAll"
-      ]
-    }
-  },
   "workflowconfig": {
     "get": {
       "/getconfig/{workflowType}": [
@@ -69,6 +62,78 @@
   "changelogs": {
     "post": {
       "/datatable/{entityName}/{entityId}/{fieldName}/{fromModifiedDate}": [
+        "PermitAll"
+      ]
+    }
+  },
+  "otp": {
+    "post": {
+      "/validateotp/{otp}": [
+        "PermitAll"
+      ],
+      "/generateandsendotp": [
+        "PermitAll"
+      ],
+      "/forgotpasswordotp": [
+        "PermitAll"
+      ]
+    }
+  },
+  "usernotificationsyncinfo": {
+    "put": {
+      "/updatesynctime": [
+        "PermitAll"
+      ]
+    }
+  },
+  "filedeletefromrepotable1masters": {
+    "post": {
+      "/datatable": [
+        "App Admin",
+        "Development Administrator"
+      ],
+      "/": [
+        "App Admin",
+        "Development Administrator"
+      ]
+    },
+    "get": {
+      "/{sid}": [
+        "App Admin",
+        "Development Administrator"
+      ],
+      "/autosuggest": [
+        "App Admin",
+        "Development Administrator"
+      ]
+    },
+    "put": {
+      "/": [
+        "App Admin",
+        "Development Administrator"
+      ]
+    },
+    "delete": {
+      "/{ids}": [
+        "App Admin",
+        "Development Administrator"
+      ],
+      "/{id}/delete/{ids}": [
+        "App Admin",
+        "Development Administrator"
+      ]
+    }
+  },
+  "deploy": {
+    "post": {
+      "/setup": [
+        "Development Administrator"
+      ]
+    }
+  },
+  "environmentinfo": {
+    "get": {
+      "/": [
         "PermitAll"
       ]
     }
@@ -153,37 +218,10 @@
       ]
     }
   },
-  "otp": {
-    "post": {
-      "/validateotp/{otp}": [
-        "PermitAll"
-      ],
-      "/generateandsendotp": [
-        "PermitAll"
-      ],
-      "/forgotpasswordotp": [
-        "PermitAll"
-      ]
-    }
-  },
-  "usernotificationsyncinfo": {
-    "put": {
-      "/updatesynctime": [
-        "PermitAll"
-      ]
-    }
-  },
   "notifications": {
     "post": {
       "/notifications/datatable": [
         "PermitAll"
-      ]
-    }
-  },
-  "deploy": {
-    "post": {
-      "/setup": [
-        "Development Administrator"
       ]
     }
   }
