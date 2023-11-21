@@ -1,0 +1,3 @@
+com.minatoorgtestcase.filedeletefromrepo.config.ApplicationRepositoriesAutoConfiguration
+com.minatoorgtestcase.filedeletefromrepo.config.ApplicationTransactionManagersAutoConfig
+com.minatoorgtestcase.filedeletefromrepo.config.ApplicationProvidersAutoConfiguration

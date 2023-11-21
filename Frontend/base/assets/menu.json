@@ -1,0 +1,31 @@
+{
+  "left" : [ {
+    "pathsInvolved" : [ ],
+    "accessControl" : [ "ffd783a2-730d-4d98-aea7-31f0c786e84d" ],
+    "label" : "Menu",
+    "element" : "menuItem"
+  }, {
+    "pathsInvolved" : [ "/applicationuser/applicationuserdetail", "/applicationuser/applicationuserlist" ],
+    "accessControl" : [ "ffd783a2-730d-4d98-aea7-31f0c786e84d" ],
+    "onClick" : "navigate_to_page",
+    "page" : {
+      "sid" : "9d42c288-4902-495a-af5f-aeff4548f5fe",
+      "name" : "Application Users",
+      "url" : "/applicationuser/applicationuserlist"
+    },
+    "label" : "Application User",
+    "element" : "menuItem"
+  } ],
+  "topBarLeft" : [ ],
+  "topBarMiddle" : [ ],
+  "topBarRight" : [ {
+    "pathsInvolved" : [ ],
+    "languages" : [ {
+      "code" : "en",
+      "name" : "English"
+    } ],
+    "element" : "language"
+  } ],
+  "right" : [ ],
+  "tabs" : [ ]
+}
